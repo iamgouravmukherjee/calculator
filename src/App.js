@@ -4,11 +4,26 @@ import './App.css';
 import Toggler from './components/toggler'
 
 class App extends Component {
+
+  state = {
+    displayMode: 'day'
+  }
+
+  handleOnclick = () => {
+    console.log('I was clicked');
+    this.setState((state) => ({
+        displayMode: (state.displayMode === "day") ? 'night' : 'day'
+      })
+    );
+  }
   render() {
     return (
       <div className="App">
-          Basic calculator
-          <Toggler toggler="Toggler"></Toggler>
+          <Toggler 
+            clicked={this.handleOnclick}
+            class="toggler"
+            value={this.state.displayMode}>
+          </Toggler>
       </div>
     );
   }
