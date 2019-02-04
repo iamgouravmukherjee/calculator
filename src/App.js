@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Toggler from './components/toggler'
+import Toggler from './components/toggler';
+import Aux from  './hoc/aux';
+import Input from './components/inputValue';
+import Result from './components/result';
 
 class App extends Component {
 
@@ -24,6 +27,10 @@ class App extends Component {
             class="toggler"
             value={this.state.displayMode}>
           </Toggler>
+          <Aux> 
+            <Input>  <div>32 + 3 </div></Input>
+            <Result> <div> 35 </div></Result>
+          </Aux>
       </div>
     );
   }
