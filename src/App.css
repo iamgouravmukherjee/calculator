@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 12px;
 }
 
 .App-logo {
@@ -29,4 +30,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.toggler {
+  text-align: right;
+  font-size: 1.5625em;
 }
