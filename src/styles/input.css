@@ -1,0 +1,19 @@
+.inputWrapper {
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: right;
+   padding: 1.5625rem;
+}
+
+.inputWrapper > div:nth-child(1) {
+   font-size: 1.75rem;
+   color: #bbbbbb;
+}
+
+.inputWrapper > div:nth-child(2) {
+   font-size: 3.5rem;
+   color: #474747;
+   font-weight: 400;
+}
