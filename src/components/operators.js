@@ -4,7 +4,7 @@ import '../styles/operators.css';
 
 const Operator = (props) => {
    return (
-      <div className = {props.classes}>{props.children}</div>
+      <div className = {props.classes} onClick={() => props.clicked(props.children)}>{props.children}</div>
    )
 }
 

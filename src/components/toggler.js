@@ -6,7 +6,7 @@ class Toggler extends React.Component {
          <div 
             className = {this.props.class} 
             onClick = {this.props.clicked}>
-            {this.props.value === "day" ? <i className="far fa-moon"></i>: <i className="fas fa-sun"></i> }
+            {this.props.value === "day" ? <i className="far fa-moon"></i>: <i className="far fa-sun"></i> }
          </div>
       )
    }

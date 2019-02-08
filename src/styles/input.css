@@ -5,6 +5,8 @@
    justify-content: space-evenly;
    text-align: right;
    padding: 1.5625rem;
+   min-height: 30vh;
+   max-height: 30vh;
 }
 
 .inputWrapper > div:nth-child(1) {
@@ -12,8 +14,52 @@
    color: #bbbbbb;
 }
 
+.App.night .inputWrapper > div:nth-child(1) {
+   color: #787878;
+}
+
 .inputWrapper > div:nth-child(2) {
    font-size: 3.5rem;
    color: #474747;
    font-weight: 400;
 }
+
+.App.night .inputWrapper > div:nth-child(2) {
+   color: #fcfcfc;
+}
+
+.grid-container {
+   display: -ms-grid;
+   display: grid;
+   -ms-grid-columns: (minmax(50px, 1fr))[auto-fit];
+       grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+   padding: 5px;
+ }
+ 
+ .grid-container .grid-item {
+   padding: 10px 20px;
+   font-size: 25px;
+   text-align: center;
+   -webkit-box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+   border-radius: 10px;
+   -ms-grid-column-align: center;
+   justify-self: center;
+   min-width: 62px;
+ }
+
+ .App.night .grid-container .grid-item {
+    background-color: #313131;
+    color: #d3d3d3; 
+    -webkit-box-shadow: none;
+   box-shadow: none;
+ }
+
+ .App.night .grid-container .operand {
+    background-color: transparent; 
+    color: #8e8b8e;
+ }
+
+ .App.night .grid-container .operators {
+    color: #dbdbdb;
+ }
