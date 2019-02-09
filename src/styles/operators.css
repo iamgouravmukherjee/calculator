@@ -3,3 +3,14 @@
    color: #86d8b6;
    font-weight: bold;
 }
+
+.equalTo {
+   color: #d6394d !important;
+   background: #f6dade;
+   border-radius: 5px;
+}
+
+.App.night .equalTo {
+   background-color: #6d6d6d !important;
+   color: #e5e5e6 !important; 
+}
