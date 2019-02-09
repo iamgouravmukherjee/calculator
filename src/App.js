@@ -108,7 +108,7 @@ class App extends Component {
       <div className={`App ${this.state.displayMode}`}>
         <Toggler
           clicked={this.toggleDayNight}
-          class="toggler"
+          class="toggler mb-4"
           value={this.state.displayMode}>
         </Toggler>
         <Aux classes="inputWrapper">
