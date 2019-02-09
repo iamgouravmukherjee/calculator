@@ -2,6 +2,8 @@
    font-size: 1.5rem;
    color: #86d8b6;
    font-weight: bold;
+   background: #eaf8f4;
+   box-shadow: 0 1px 5px 1px rgba(234, 248, 244, .15) !important;
 }
 
 .equalTo {

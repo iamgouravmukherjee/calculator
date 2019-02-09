@@ -9,9 +9,10 @@
   background: #181818;
 }
 
-.toggler {
-  text-align: right;
-  font-size: 1.5625em;
+.toggler > img {
+  float: right;
+  width: 1.5625em;
+  height: auto;
 }
 
 .App.night .toggler {
